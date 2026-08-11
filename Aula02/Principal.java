@@ -1,4 +1,4 @@
-package aula02;
+package Aula02;
 
 public class Principal {
     // metodo principal para executar o codigo

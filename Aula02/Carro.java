@@ -1,11 +1,11 @@
 //cria classe carro
 
-package  Aula02 // package tem o nome de pasta 
+package  Aula02; // package tem o nome de pasta 
 
 class Carro { // atributos 
 	// cria uma variavel marca do tipo String
-	string marca;
-	string cor; 
+	String marca;
+	String cor; 
 
 	//metodo (ação)
 	void buzinar () {
