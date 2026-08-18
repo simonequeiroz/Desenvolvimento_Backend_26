@@ -13,9 +13,9 @@ public class CalculadoraNotas {
 public static String verificarSituacao(double media) {
     if(media >=7){
         return "Aprovado";
-             else{
-                return "Reprovado";
-            }
+    } else {
+        return "Reprovado";
+    }
 }
 
 

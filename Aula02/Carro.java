@@ -1,6 +1,6 @@
 // Cria a classe chamada Carro
 
-package aula02; // package é por conta da pasta criada
+package Aula02; // package é por conta da pasta criada
 
 // Criando construtor
 class Carro {
