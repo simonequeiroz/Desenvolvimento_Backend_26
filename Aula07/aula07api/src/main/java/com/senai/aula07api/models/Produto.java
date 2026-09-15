@@ -1,23 +1,22 @@
 package com.senai.aula07api.models;
 
 public class Produto {
-    // Atributos do produto
+    private static int contadorId = 0;
+
     private int id;
     private String nome;
     private double preco;
 
-    // Construtor vazio usado na conversao do JSON recebido pela API.
-    public Produto() {
-    }
-
-    // Construtor
-    public Produto(int id, String nome, double preco) {
-        this.id = id;
+    public Produto(String nome, double preco) {
+        contadorId++;
+        this.id = contadorId;
         this.nome = nome;
         this.preco = preco;
     }
 
-    // Getters e Setters
+    public Produto() {
+    }
+
     public int getId() {
         return id;
     }

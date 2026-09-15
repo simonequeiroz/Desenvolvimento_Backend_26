@@ -23,11 +23,11 @@ public class ProdutoControllers {
     // Cria um construtor para produtocontrollers
 
     public ProdutoControllers(){
-        produtos.add(new Produto(1,"Notebook" , 3500));
+        produtos.add(new Produto("Notebook", 3500));
 
-        produtos.add(new Produto(2, "Mouse", 100));
+        produtos.add(new Produto("Mouse", 100));
 
-        produtos.add(new Produto(3, "Teclado", 250));
+        produtos.add(new Produto("Teclado", 250));
 
     }
 
@@ -63,8 +63,9 @@ public class ProdutoControllers {
     // PostMapping
     @PostMapping
     public Produto cadastrarProduto(@RequestBody Produto produto) {
-        produtos.add(produto);
-        return produto;
+        Produto novoProduto = new Produto(produto.getNome(), produto.getPreco());
+        produtos.add(novoProduto);
+        return novoProduto;
 
 
 
