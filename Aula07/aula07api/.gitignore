@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -32,7 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-=======
-# Ignorar arquivos de compilados
-*.class
->>>>>>> 0fb6d9db61907ea9cfcc9b71d17610280084360d

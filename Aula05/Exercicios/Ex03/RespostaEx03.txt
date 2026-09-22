@@ -1,0 +1,26 @@
+Resposta da pergunta do Exercício 03:
+
+Por que um objeto ProdutoFisico ou ProdutoDigital pode ser armazenado em uma variável do tipo Produto?
+
+Resposta: Porque as subclasses ProdutoFisico e ProdutoDigital herdam da classe Produto.
+Isso significa que qualquer objeto criado a partir dessas subclasses também é um objeto do tipo Produto.
+
+Em Java, a herança estabelece uma relação de "é um":
+- um ProdutoFisico é um Produto
+- um ProdutoDigital é um Produto
+
+Por isso, o código abaixo funciona corretamente:
+
+List<Produto> carrinhoProdutos = new ArrayList<>();
+carrinhoProdutos.add(new ProdutoFisico(...));
+carrinhoProdutos.add(new ProdutoDigital(...));
+
+Isso permite que a lista trate todos os produtos de forma genérica, usando a classe base Produto,
+mesmo quando os objetos concretos são de tipos diferentes.
+
+Além disso, isso facilita o polimorfismo:
+- o método calcularFrete() é chamado conforme o tipo real do objeto
+- ProdutoFisico calcula frete com base no peso
+- ProdutoDigital retorna frete zero
+
+Essa é a vantagem principal da herança e do polimorfismo: reutilizar o mesmo tipo de referência para diferentes objetos, sem perder o comportamento específico de cada subclasse.
